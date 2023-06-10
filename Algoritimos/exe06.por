@@ -1,11 +1,20 @@
-Algoritmo CalculaIdadeMeses
+programa {
+  funcao inicio() {
+
+    var
+    inteiro: idade
+    inteiro: idadeMeses
+   
     // Recebe a idade da pessoa
-    Escreva("Digite sua idade: ")
-    Leia(idade)
+    escreva("Digite sua idade: ")
+    leia(idade)
 
     // Calcula a idade em meses
-    idadeMeses <- idade * 12
+    idadeMeses = idade * 12
 
     // Imprime o resultado da idade em meses
-    Escreva("Sua idade em meses é: ", idadeMeses)
-FimAlgoritmo
+    escreva("Sua idade em meses é: ", idadeMeses)
+
+    
+  }
+}

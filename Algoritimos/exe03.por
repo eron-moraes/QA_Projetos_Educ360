@@ -1,11 +1,20 @@
-Algoritmo DobroNumero
-    // Recebe o número inteiro
-    Escreva("Digite um número inteiro: ")
-    Leia(numero)
+programa {
+  funcao inicio() {
 
-    // Calcula o dobro do número
-    dobro <- numero * 2
+    var
+    inteiro: numero
+    inteiro: dobro
+   
+
+    // Recebe o nÃºmero inteiro
+    escreva("Digite um numero inteiro: ")
+    leia(numero)
+
+    // Calcula o dobro do nÃºmero
+    dobro = numero * 2
 
     // Imprime o resultado do dobro
-    Escreva("O dobro do número é: ", dobro)
-FimAlgoritmo
+    escreva("O dobro do numero é: ", dobro)
+    
+  }
+}

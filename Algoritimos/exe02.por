@@ -1,14 +1,23 @@
-Algoritmo SomaNumeros
-    // Recebe os dois números inteiros
-    Escreva("Digite o primeiro número: ")
-    Leia(numero1)
+programa {
+  funcao inicio() {
 
-    Escreva("Digite o segundo número: ")
-    Leia(numero2)
+    var
+    inteiro: numero1
+    inteiro: numero2
+    inteiro: soma
+
+    // Recebe os dois números inteiros
+    escreva("Digite o primeiro número: ")
+    leia(numero1)
+
+    escreva("Digite o segundo número: ")
+    leia(numero2)
 
     // Calcula a soma dos números
-    soma <- numero1 + numero2
+    soma = numero1 + numero2
 
     // Imprime o resultado da soma
-    Escreva("A soma dos números é: ", soma)
-FimAlgoritmo
+    escreva("A soma dos números é: ", soma)
+    
+  }
+}

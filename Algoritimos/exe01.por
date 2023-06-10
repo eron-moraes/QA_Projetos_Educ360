@@ -1,8 +1,12 @@
-Algoritmo BoasVindas
-    // Recebe o nome da pessoa
-    Escreva("Digite seu nome: ")
-    Leia(nome)
+programa {
+  funcao inicio() {
 
-    // Imprime a mensagem de boas-vindas personalizada
-    Escreva("Olá, ", nome, "! Seja bem-vindo(a).")
-FimAlgoritmo
+ var
+    cadeia: nome
+inicio
+    escreva("Digite seu nome: ")
+    leia (nome)
+    escreva("Seja muito bem vindo ao curso da Educ360, ", nome)
+    
+  }
+}

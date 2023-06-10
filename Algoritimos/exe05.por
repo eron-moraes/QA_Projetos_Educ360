@@ -1,14 +1,24 @@
-Algoritmo CalculaIMC
-    // Recebe o peso e a altura da pessoa
-    Escreva("Digite o peso (em kg): ")
-    Leia(peso)
+programa {
+  funcao inicio() {
 
-    Escreva("Digite a altura (em metros): ")
-    Leia(altura)
+    var
+    real: peso
+    real: altura
+    real : imc
+   
+    // Recebe o peso e a altura da pessoa
+    escreva("Digite o peso (em kg): ")
+    leia(peso)
+
+    escreva("Digite a altura (em metros): ")
+    leia(altura)
 
     // Calcula o IMC
-    imc <- peso / (altura * altura)
+    imc = peso / (altura * altura)
 
     // Imprime o resultado do IMC
-    Escreva("Seu índice de massa corporal (IMC) é: ", imc)
-FimAlgoritmo
+    escreva("Seu índice de massa corporal (IMC) é: ", imc)
+
+    
+  }
+}
