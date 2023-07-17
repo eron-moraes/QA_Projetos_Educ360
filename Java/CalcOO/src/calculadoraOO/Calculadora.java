@@ -1,8 +1,8 @@
 package calculadoraOO;
 
-//Classe Calculadora
+
 public class Calculadora {
- // Método para calcular a operação matemática
+
  public double calcular(double a, double b, char operador) {
      double resultado = 0;
      
