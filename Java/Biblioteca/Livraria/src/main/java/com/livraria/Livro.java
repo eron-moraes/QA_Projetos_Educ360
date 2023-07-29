@@ -1,21 +1,19 @@
 package com.livraria;
 
-//Livro.java
 public class Livro {
- private String titulo;
- private double preco;
+    private String titulo;
+    private double preco;
 
- public Livro(String titulo, double preco) {
-     this.titulo = titulo;
-     this.preco = preco;
- }
+    public Livro(String titulo, double preco) {
+        this.titulo = titulo;
+        this.preco = preco;
+    }
 
- public String getTitulo() {
-     return titulo;
- }
+    public String getTitulo() {
+        return titulo;
+    }
 
- public double getPreco() {
-     return preco;
- }
+    public double getPreco() {
+        return preco;
+    }
 }
-

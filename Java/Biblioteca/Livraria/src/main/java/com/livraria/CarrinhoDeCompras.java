@@ -3,9 +3,8 @@ package com.livraria;
 import java.util.ArrayList;
 import java.util.List;
 
-// CarrinhoDeCompras.java
 public class CarrinhoDeCompras {
-    private List<Livro> itens;
+    private List<Object> itens; // Usando Object como tipo comum para livro físico e ebook
 
     public CarrinhoDeCompras() {
         itens = new ArrayList<>();
@@ -21,18 +20,26 @@ public class CarrinhoDeCompras {
 
     public double calcularTotal() {
         double total = 0.0;
-        for (Livro livro : itens) {
-            total += livro.getPreco();
+        for (Object item : itens) {
+            if (item instanceof Livro) {
+                Livro livro = (Livro) item;
+                total += livro.getPreco();
+            }
         }
         return total;
     }
 
     public void exibirCarrinho() {
         System.out.println("Carrinho de Compras:");
-        for (Livro livro : itens) {
-            System.out.println(livro.getTitulo() + " - R$" + livro.getPreco());
+        for (Object item : itens) {
+            if (item instanceof Livro) {
+                Livro livro = (Livro) item;
+                String tipoLivro = (livro instanceof LivroFisico) ? "Livro Físico" : "Ebook";
+                System.out.println(tipoLivro + " - " + livro.getTitulo() + " - R$" + livro.getPreco());
+            }
         }
         System.out.println("Total da compra: R$" + calcularTotal());
     }
 }
+
 
