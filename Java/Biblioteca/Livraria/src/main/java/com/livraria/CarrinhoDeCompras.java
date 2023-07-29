@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CarrinhoDeCompras {
-    private List<Object> itens; // Usando Object como tipo comum para livro físico e ebook
+    private List<Object> itens;
 
     public CarrinhoDeCompras() {
         itens = new ArrayList<>();

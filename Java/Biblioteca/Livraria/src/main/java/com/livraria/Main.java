@@ -7,18 +7,18 @@ public class Main {
     private static CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
 
     public static void main(String[] args) {
-        exibirMenuPrincipal();
+        menu();
     }
 
-    private static void exibirMenuPrincipal() {
+    private static void menu() {
         int opcao;
         do {
-            System.out.println("\nMenu Principal");
-            System.out.println("1. Cadastrar Livro");
-            System.out.println("2. Cadastrar Ebook");
-            System.out.println("3. Exibir Carrinho de Compras");
-            System.out.println("4. Sair");
-            System.out.print("Faca sua escolha: ");
+            System.out.println("\nBem vindo a nossa livraria");
+            System.out.println("1- Escolher e digitar Livro fisico");
+            System.out.println("2- Escolher e digitar Ebook");
+            System.out.println("3- Exibir Carrinho de Compras");
+            System.out.println("4- Sair");
+           
             opcao = scanner.nextInt();
 
             switch (opcao) {
@@ -32,31 +32,31 @@ public class Main {
                     exibirCarrinhoDeCompras();
                     break;
                 case 4:
-                    System.out.println("Obrigado por utilizar nosso sistema!");
+                    System.out.println("Obrigado por utilizar nossa livraria!");
                     break;
                 default:
-                    System.out.println("Opção inválida. Tente novamente.");
+                    System.out.println("Opcao invalida. Tente novamente!");
             }
         } while (opcao != 4);
     }
 
     private static void cadastrarLivroFisico() {
-        System.out.print("Digite o título do livro físico: ");
-        scanner.nextLine(); // Consumir a quebra de linha deixada pelo nextInt()
+        System.out.print("Digite o titulo do livro fisico: ");
+        scanner.nextLine();
         String titulo = scanner.nextLine();
-        System.out.print("Digite o preço do livro físico: ");
+        System.out.print("Digite o preco do livro fisico: ");
         double preco = scanner.nextDouble();
 
         LivroFisico livroFisico = new LivroFisico(titulo, preco);
         carrinho.adicionarItem(livroFisico);
-        System.out.println("Livro físico cadastrado com sucesso!");
+        System.out.println("Livro fisico cadastrado com sucesso!");
     }
 
     private static void cadastrarEbook() {
-        System.out.print("Digite o título do ebook: ");
-        scanner.nextLine(); // Consumir a quebra de linha deixada pelo nextInt()
+        System.out.print("Digite o titulo do ebook: ");
+        scanner.nextLine();
         String titulo = scanner.nextLine();
-        System.out.print("Digite o preço do ebook: ");
+        System.out.print("Digite o preco do ebook: ");
         double preco = scanner.nextDouble();
 
         Ebook ebook = new Ebook(titulo, preco);
