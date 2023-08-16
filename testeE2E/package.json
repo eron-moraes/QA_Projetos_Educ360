@@ -1,0 +1,14 @@
+{
+  "name": "testee2e",
+  "version": "1.0.0",
+  "description": "Projeto de cadastro de cliente",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Eron Moraes",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^12.17.4"
+  }
+}
