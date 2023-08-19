@@ -15,7 +15,7 @@ public class CadastroClientesTest {
 
     @Before
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "caminho/do/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "C:\\WebDrivers\\ChromeDriver\\109");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
     }
