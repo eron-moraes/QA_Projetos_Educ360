@@ -17,7 +17,7 @@ public class AberturaTeste {
 
 		driver = new ChromeDriver();
 
-		driver.get("https://educ360.org/");
+		driver.get("https://educ360dev.com.br/qa-test/admin/login");
 
 	}
 
@@ -25,7 +25,7 @@ public class AberturaTeste {
 
 	public void testConfereConfigProjetoOK() throws InterruptedException {
 
-		Assert.assertEquals("https://educ360.org/", driver.getCurrentUrl());
+		Assert.assertEquals("https://educ360dev.com.br/qa-test/admin/login", driver.getCurrentUrl());
 
 	}
 
