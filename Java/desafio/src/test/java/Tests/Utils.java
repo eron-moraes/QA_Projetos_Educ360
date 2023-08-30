@@ -1,15 +1,13 @@
 package Tests;
 
 import org.junit.After;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import Pages.Login;
+import desafio.Desafio;
 
 
 public class Utils {
@@ -24,15 +22,9 @@ public class Utils {
     }
     
     @Test
-    public void testLogin() {
-        Login login = new Login(driver);
-        login.acessarPaginaDeLogin();
-        login.preencherEmail();
-        login.preencherSenha();
-        login.clicarEntrar();
-        Assert.assertEquals("QA Test", driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/h1/small")).getText());
-        login.testCadastroCliente();
-
+    public void testFluxo() {
+        Desafio desafio = new Desafio(driver);
+        desafio.acessa();
     }
 
     @After

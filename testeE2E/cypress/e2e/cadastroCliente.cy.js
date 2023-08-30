@@ -36,6 +36,11 @@ describe('Cadastro de Clientes', () => {
     cy.get('.badge-success').click()
     cy.get('#btn_inserir_editar').click()
 
+    cy.get('div.text-center.alert_messages.alert.alert-success.alert-dismissible')
+      .should('be.visible')
+      .contains('Registro inserido com sucesso')
+
+
   })
 
 })
