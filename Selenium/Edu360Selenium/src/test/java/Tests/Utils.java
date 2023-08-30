@@ -24,7 +24,6 @@ public class Utils {
     }
     
     @Test
-
     public void testLogin() {
         Login login = new Login(driver);
         login.acessarPaginaDeLogin();
