@@ -24,7 +24,7 @@ describe('Cadastro de Clientes', () => {
 
     //Formulário
     var usuario = {
-      nome: 'Denilson',
+      nome: 'Eron',
       estado: 'São Paulo',
       cidade: 'São Paulo',
     }
