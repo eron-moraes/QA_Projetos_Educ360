@@ -1,14 +1,15 @@
 package configuration;
 
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.lang.reflect.MalformedParametersException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.logging.Logger;
+
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
 
 public class DriverFactory {
     private static AppiumDriver<?> appiumDriver;

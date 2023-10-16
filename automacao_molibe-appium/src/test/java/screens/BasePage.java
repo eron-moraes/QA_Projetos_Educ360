@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import static configuration.DriverFactory.getDriver;
 
 public class BasePage {
-    public BasePage(){
-        PageFactory.initElements(new AppiumFieldDecorator(getDriver()), this);
-    }
+	public BasePage() {
+		PageFactory.initElements(new AppiumFieldDecorator(getDriver()), this);
+	}
 }
